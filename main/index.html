@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            MANGA SPOT
+        </title>
+        <style>
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(back.png);
+    background-position: 50%;
+}
+.head{
+    margin: 0%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+   
+}
+.logocontainer{
+    display: flex;
+    align-items: center;
+    gap:5px
+}
+.logo{
+  height: 48px;
+  width: auto;
+}
+.manga{
+    color: antiquewhite;
+    padding-right: 50px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navigation{
+    display: grid;
+    
+}
+.navigation a{
+color: aliceblue;
+padding-right: 10px;
+}
+.manga-card{
+    padding-bottom: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+.mangas{
+   display:grid;
+   grid-template-columns: 200px 200px 200px;
+   justify-content: space-between;
+    
+}
+.trending{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+.trending1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 7, 7);
+}
+.trending a:hover{
+    transition: 0.4s;transform: scale(1.2);
+}
+
+h3{
+    background: black;
+    color: antiquewhite;
+    margin-bottom: 0;
+}
+.manga-card img:hover{
+       transition: 0.3s; transform: scale(1.1)
+}
+.flex{
+    flex-grow: 1;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <header class="head">
+
+         <div class="logocontainer">
+            <img class="logo" src="https://img.freepik.com/free-vector/gaming-gradient-gas-mask-logo_52683-137098.jpg?semt=ais_hybrid&w=740&q=80">
+            <span class="manga">MANGASPOT</span>
+         </div>
+
+        <nav class="navigation">
+        <a href="">HOME</a>
+        <a href="">TRENDING</a>
+        <a href="">ABOUT US</a>
+        <a href="E:\web\login\login.html">LOGIN</a>
+        </nav>
+
+        </header>
+
+        <main>
+
+            <section class="trending">
+            <div class="trending1">
+               <a href="E:\web\onepiece\onepiece.html"><img src="onepiece.jpg" title="ONEPIECE"></a> 
+                <span> One Piece The Greatest story ever told is a Japanese manga series written and illustrated by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, as he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.</span>
+            </div>
+            </section>
+            
+      <center> <h3>POPULAR MANGA</h3> </center>
+        <section class="mangas">
+           
+           <div class="manga-card">
+               <a> <img src="naruto.jpg"> </a>
+            </div>
+            <div class="manga-card">
+               <a> <img src="download.jpg"> </a>
+           </div>
+            <div class="manga-card">
+               <a> <img src="demon.jpg"> </a>
+           </div>
+           
+           
+           
+        </section>
+         </main>
+    </body>
+</html>
