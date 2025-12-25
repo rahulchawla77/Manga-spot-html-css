@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            MANGA SPOT-WELCOME
+        </title>
+        <style>
+            body{
+                background:black;  
+            }
+.head{
+    display: flex;
+}
+.logotext{
+    color: aliceblue;
+}            
+.logo{
+    color: antiquewhite;
+    width: 70px;
+}
+.msg{
+    color: rgb(237, 240, 239);
+    text-align: center;
+}
+.welcome{
+    justify-content: center;
+    align-items: center;
+}
+.checkout{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100px;
+    justify-content: space-between;
+    
+}
+.img{
+    width: 250px;
+    height: 270px;
+}
+        </style>
+    </head>
+    <body>
+        <section class="head">
+        <img class="logo" src="https://img.freepik.com/free-vector/gaming-gradient-gas-mask-logo_52683-137098.jpg?semt=ais_hybrid&w=740&q=80">
+        <h1 class="logotext">
+            MANGA SPOT
+        </h1>
+            </section>
+        <section class="welcome">
+        <h1 class="msg">
+            THANKS FOR LOGGING IN
+        </h1>
+        <p class="msg">
+            WELCOME,name <br>
+            YOU CAN NOW ENJOY VIEWING CONTENT 
+        </p>
+        <h2 class="msg">
+            CHECK OUT-
+        </h2>
+        </section>
+        <section class="checkout">
+            <a href="" > <img class="img" src="E:\web\main\onepiece.jpg"> </a>
+            <a href="" > <img class="img" src="E:\web\main\naruto.jpg"> </a>
+            <a href="" > <img class="img" src="E:\web\main\demon.jpg"> </a>
+        </section>
+        <script>
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("username");
+
+  if (name) {
+    document.getElementById("username").textContent = name;
+  } else {
+    document.getElementById("username").textContent = "User";
+  }
+</script>
+
+    </body>
+</html>
